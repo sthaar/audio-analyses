@@ -20,7 +20,7 @@ for ifile to numberOfFiles
 	Set column label (index): 2, "label"
 	Set column label (index): 3, "offset_s"
 ### save table as csv
-	filennew$ = replace$ (fileName$, "TextGrid", "csv", 0)
+	filennew$ = replace$ (fileName$, "TextGrid", ".wav.csv", 0)
 	Save as comma-separated file: directory$ + "/" + filennew$
 endfor
 
