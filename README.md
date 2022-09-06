@@ -1,4 +1,12 @@
-praatscripts
+Audio analysis for (bio)acoustics in praat and python
+
+python:
+
+
+
+
+
+praatscripts:
 
 #staring a collection of useful praatscripts for editing and analyzing soundfiles for bioacoustics
 
