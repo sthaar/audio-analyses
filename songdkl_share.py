@@ -106,7 +106,7 @@ def calculate(path1, path2, k, k2, max_wavs=120, max_num_psds=10000):
 
     syls1, objss1 = _get_all_syls(fils1) 
     syls2, objss2 = _get_all_syls(fils2)
-    
+ 
     objscsv=np.array()
     for i in range(len(fils2)):
         objscsv[i,:]=fils2[i]
@@ -131,9 +131,6 @@ def calculate(path1, path2, k, k2, max_wavs=120, max_num_psds=10000):
     ltwo = len(segedpsds2)
     lone_half = int(lone / 2)
     ltwo_half = int(ltwo / 2)
-    
-        #StH for debugging
-    #import pdb;pdb.set_trace()  # this will stop just before the crash
 
     # calculate distance matrices
     d1 = spatial.distance.cdist(segedpsds1[:lone_half], basis_set, 'sqeuclidean')
