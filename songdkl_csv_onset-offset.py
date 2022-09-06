@@ -106,20 +106,14 @@ def calculate(path1, path2, k, k2, max_wavs=120, max_num_psds=10000):
 
     syls1, objss1 = _get_all_syls(fils1) 
     syls2, objss2 = _get_all_syls(fils2)
- 
-#    print(objss2[0:10][0][0])
- #   print(shape(objss2))
+    
     objscsv=np.array()
     for i in range(len(fils2)):
-        print('i ', i)
         objscsv[i,:]=fils2[i]
         for j in objss2[i,:]:        
             objscsv[i,j]=([objss2[i][0][j].start,objss2[i][0][j].stop])
-            #print('j ', j)
-#    print(objscsv)
- #   print(type(objss2[0][0][0])) #--> slice
 
-    np.savetxt("TESTSITA2txt.csv", 
+    np.savetxt("TEST.csv", 
            [num for num in objscsv[:] if isinstance(num, (int,float))],
             objscsv,
             delimiter =", ",
