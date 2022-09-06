@@ -8,7 +8,7 @@ python:
     notebook to print multiple spectrograms, reading all .wav files from a folder and printing them by 100 files. When more files exist in the folder a popup will appear (sometimes hidden behind the jupyter lab window!), which you can click to continue
 
 
-* songdkl_csv_onset-offset.py: 
+* songdkl_csv_onset-offset_share.py: 
     adaptation of songdkl script (https://github.com/NickleDave/songdkl) producing csv file with onset and offset times for segmented syllables, in order to visualize segmentation by printing spectrograms (using get_spectrogram_with_lines_clean.ipynb
 
 * get_spectrogram_with_lines_clean.ipynb: 
